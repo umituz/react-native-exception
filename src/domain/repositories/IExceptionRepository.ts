@@ -44,3 +44,7 @@ export interface IExceptionRepository {
   clearErrorLogs(userId: string): Promise<ExceptionResult<boolean>>;
 }
 
+
+
+
+
