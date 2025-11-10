@@ -1,6 +1,6 @@
 {
   "name": "@umituz/react-native-exception",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Exception handling and error tracking for React Native apps",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
@@ -22,7 +22,7 @@
     "error-boundary",
     "crash-reporting"
   ],
-  "author": "\u00dcmit UZ <umit@umituz.com>",
+  "author": "Ümit UZ <umit@umituz.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -32,10 +32,10 @@
     "react": ">=18.2.0",
     "react-native": ">=0.74.0",
     "zustand": "^5.0.2",
-    "@umituz/react-native-design-system": "^1.8.0"
+    "@umituz/react-native-theme": "*"
   },
   "peerDependenciesMeta": {
-    "@umituz/react-native-design-system": {
+    "@umituz/react-native-theme": {
       "optional": false
     }
   },
@@ -46,7 +46,7 @@
     "react": "^18.2.0",
     "react-native": "^0.74.0",
     "zustand": "^5.0.2",
-    "@umituz/react-native-design-system": "^1.8.0"
+    "@umituz/react-native-theme": "latest"
   },
   "publishConfig": {
     "access": "public"

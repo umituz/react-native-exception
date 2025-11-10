@@ -6,7 +6,7 @@
 import React, { Component, ReactNode } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { exceptionService } from '../../infrastructure/services/ExceptionService';
-import { useAppDesignTokens } from '@umituz/react-native-design-system';
+import { useAppDesignTokens } from '@umituz/react-native-theme';
 
 interface Props {
   children: ReactNode;
@@ -119,6 +119,8 @@ const getStyles = (tokens: ReturnType<typeof useAppDesignTokens>) =>
       fontWeight: tokens.typography.labelLarge.fontWeight,
     },
   });
+
+
 
 
 
