@@ -48,6 +48,11 @@ export { ExceptionService, exceptionService } from './infrastructure/services/Ex
 
 // Components
 export { ErrorBoundary } from './presentation/components/ErrorBoundary';
+export { EmptyState } from './presentation/components/EmptyState';
+export type { EmptyStateProps } from './presentation/components/EmptyState';
+
+
+
 
 
 

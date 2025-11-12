@@ -6,6 +6,7 @@ Exception handling and error tracking for React Native apps.
 
 - Centralized exception handling
 - Error boundary component
+- Empty state component for no data scenarios
 - Exception store with Zustand
 - Error categorization and severity levels
 - Exception reporting utilities
@@ -21,6 +22,8 @@ npm install @umituz/react-native-exception
 - `react` >= 18.2.0
 - `react-native` >= 0.74.0
 - `zustand` >= 5.0.2
+- `@umituz/react-native-theme` >= 1.0.0
+- `@umituz/react-native-design-system` >= 1.0.0
 
 ## Usage
 
@@ -59,9 +62,26 @@ import { useExceptionStore } from '@umituz/react-native-exception';
 const { exceptions, lastError } = useExceptionStore();
 ```
 
+### Empty State
+
+```typescript
+import { EmptyState } from '@umituz/react-native-exception';
+
+<EmptyState
+  icon="inbox"
+  title="No items found"
+  description="Start by adding your first item"
+  actionLabel="Add Item"
+  onAction={() => navigation.navigate('Add')}
+/>
+```
+
 ## License
 
 MIT
+
+
+
 
 
 

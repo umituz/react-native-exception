@@ -32,7 +32,8 @@
     "react": ">=18.2.0",
     "react-native": ">=0.74.0",
     "zustand": "^5.0.2",
-    "@umituz/react-native-theme": "*"
+    "@umituz/react-native-theme": "*",
+    "@umituz/react-native-design-system": "*"
   },
   "peerDependenciesMeta": {
     "@umituz/react-native-theme": {
@@ -46,7 +47,8 @@
     "react": "^18.2.0",
     "react-native": "^0.74.0",
     "zustand": "^5.0.2",
-    "@umituz/react-native-theme": "latest"
+    "@umituz/react-native-theme": "latest",
+    "@umituz/react-native-design-system": "latest"
   },
   "publishConfig": {
     "access": "public"
