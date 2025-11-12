@@ -6,7 +6,7 @@
 import React, { Component, ReactNode } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { exceptionService } from '../../infrastructure/services/ExceptionService';
-import { useAppDesignTokens } from '@umituz/react-native-theme';
+import { useAppDesignTokens } from '@umituz/react-native-design-system-theme';
 
 interface Props {
   children: ReactNode;
