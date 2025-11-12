@@ -3,6 +3,9 @@
  * Pure business logic representation of errors and exceptions
  */
 
+import 'react-native-get-random-values';
+import { v4 as uuidv4 } from 'uuid';
+
 export type ExceptionSeverity = 'fatal' | 'error' | 'warning' | 'info';
 export type ExceptionCategory = 'network' | 'validation' | 'authentication' | 'authorization' | 'business-logic' | 'system' | 'storage' | 'unknown';
 
@@ -48,7 +51,7 @@ export function createException(
   context: ExceptionContext = {}
 ): ExceptionEntity {
   return {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     message: error.message,
     stack: error.stack,
     severity,
@@ -67,7 +70,7 @@ export function createErrorLog(
   exception: ExceptionEntity
 ): ErrorLog {
   return {
-    id: crypto.randomUUID(),
+    id: uuidv4(),
     exceptionId: exception.id,
     userId: exception.context.userId,
     message: exception.message,
