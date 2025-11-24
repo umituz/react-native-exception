@@ -7,12 +7,7 @@
 
 import React from "react";
 import { View, StyleSheet, TouchableOpacity } from "react-native";
-import {
-  useAppDesignTokens,
-  AtomicIcon,
-  AtomicText,
-  STATIC_TOKENS,
-} from "@umituz/react-native-design-system";
+import { AtomicIcon, AtomicText, useAppDesignTokens, STATIC_TOKENS } from "@umituz/react-native-design-system";
 
 export interface EmptyStateProps {
   icon?: string;

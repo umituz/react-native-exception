@@ -20,7 +20,7 @@ export interface ExceptionContext {
 export interface ExceptionEntity {
   id: string;
   message: string;
-  stack?: string;
+  stackTrace?: string;
   severity: ExceptionSeverity;
   category: ExceptionCategory;
   context: ExceptionContext;
@@ -34,7 +34,7 @@ export interface ErrorLog {
   exceptionId: string;
   userId?: string;
   message: string;
-  stack?: string;
+  stackTrace?: string;
   severity: ExceptionSeverity;
   category: ExceptionCategory;
   context: ExceptionContext;
@@ -53,7 +53,7 @@ export function createException(
   return {
     id: uuidv4(),
     message: error.message,
-    stack: error.stack,
+    stackTrace: error.stack,
     severity,
     category,
     context,
@@ -74,7 +74,7 @@ export function createErrorLog(
     exceptionId: exception.id,
     userId: exception.context.userId,
     message: exception.message,
-    stack: exception.stack,
+    stackTrace: exception.stackTrace,
     severity: exception.severity,
     category: exception.category,
     context: exception.context,

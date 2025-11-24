@@ -40,7 +40,11 @@ export type {
 export { useExceptionStore, useExceptions } from './infrastructure/storage/ExceptionStore';
 
 // Services
-export { ExceptionService, exceptionService } from './infrastructure/services/ExceptionService';
+// Infrastructure Services
+export { ExceptionService } from './infrastructure/services/ExceptionService';
+export { ExceptionHandler } from './infrastructure/services/ExceptionHandler';
+export { ExceptionReporter } from './infrastructure/services/ExceptionReporter';
+export { ExceptionLogger } from './infrastructure/services/ExceptionLogger';
 
 // =============================================================================
 // PRESENTATION LAYER EXPORTS

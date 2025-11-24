@@ -32,10 +32,11 @@
     "react": ">=18.2.0",
     "react-native": ">=0.74.0",
     "zustand": "^5.0.2",
-    "uuid": "^9.0.0",
+    "uuid": "^10.0.0",
     "react-native-get-random-values": "^1.11.0",
     "@umituz/react-native-design-system-theme": "*",
-    "@umituz/react-native-design-system": "*"
+    "@umituz/react-native-design-system": "*",
+    "lucide-react-native": "^0.468.0"
   },
   "peerDependenciesMeta": {
     "@umituz/react-native-design-system-theme": {
