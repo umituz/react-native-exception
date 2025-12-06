@@ -54,6 +54,8 @@ export { ExceptionLogger } from './infrastructure/services/ExceptionLogger';
 export { ErrorBoundary } from './presentation/components/ErrorBoundary';
 export { EmptyState } from './presentation/components/EmptyState';
 export type { EmptyStateProps } from './presentation/components/EmptyState';
+export { ErrorState } from './presentation/components/ErrorState';
+export type { ErrorStateProps } from './presentation/components/ErrorState';
 
 
 
